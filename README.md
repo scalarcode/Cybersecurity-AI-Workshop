@@ -71,33 +71,31 @@ We use **ngrok** to expose the Streamlit app running inside Colab to the web.
 The notebook will install all required packages:
 ```bash
 !pip install --quiet streamlit pyngrok huggingface_hub bandit semgrep
+```
+### 2. Enter API keys
 
+   - ##Paste your Hugging Face token (HF_TOKEN)
+   - ##Paste your ngrok authtoken (NGROK_AUTH_TOKEN)
 
-2. Enter API keys
-
-   ##Paste your Hugging Face token (HF_TOKEN)
-   ##Paste your ngrok authtoken (NGROK_AUTH_TOKEN)
-
-3. Create vulnerable app
+### 3. Create vulnerable app
    The notebook generates a sample_app/vulnerable.py file with insecure code (hardcoded secrets, command injection).
    This ensures Bandit & Semgrep always produce findings.
 
-4. Run the Streamlit UI
+### 4. Run the Streamlit UI
    The notebook launches:
+   ```python
    streamlit run app.py --server.port 10000
+   ```
+   and opens an ngrok tunnel. Copy the public URL printed in the notebook (e.g., https://xxxx.ngrok-free.app) and open it in your browser.
 
-   and opens an ngrok tunnel. Copy the public URL printed in the notebook (e.g., https://xxxx.ngrok-free.app) and open it in     your browser.
-
-5. Click “Run Multi-Agent Scan”
+### 5. Click “Run Multi-Agent Scan”
    In the Streamlit UI, you’ll see:
-
-      Raw Bandit + Semgrep findings
-
-      Analyst Agent (AI) summary
-
-      Responder Agent (AI) remediation plan
+   1. Raw Bandit + Semgrep findings
+   2. Analyst Agent (AI) summary
+   3. Responder Agent (AI) remediation plan
    
 🧩 Architecture (CAI Workflow)
+```bash
 ┌───────────────┐
 │ Sample App    │
 └──────┬────────┘
