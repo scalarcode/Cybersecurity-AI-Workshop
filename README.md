@@ -123,9 +123,7 @@ The notebook will install all required packages:
 ```
 ### 📚 References
 
---- Bandit (Python Security Linter) https://bandit.readthedocs.io/en/latest/
-Semgrep (Static Analysis)
-
-Hugging Face Inference API
-
-Ngrok
+- Bandit (Python Security Linter) https://bandit.readthedocs.io/en/latest/
+- Semgrep (Static Analysis) https://semgrep.dev/
+- Hugging Face Inference API https://huggingface.co/docs/api-inference/index
+- Ngrok https://ngrok.com/
