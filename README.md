@@ -88,8 +88,9 @@ The notebook will install all required packages:
    ```
    and opens an ngrok tunnel. Copy the public URL printed in the notebook (e.g., https://xxxx.ngrok-free.app) and open it in your browser.
 
-### 5. Click “Run Multi-Agent Scan”
-   In the Streamlit UI, you’ll see:
+### 5. Run the scan
+   Click “Run Multi-Agent Scan” In the Streamlit UI, 
+   you’ll see:
    1. Raw Bandit + Semgrep findings
    2. Analyst Agent (AI) summary
    3. Responder Agent (AI) remediation plan
