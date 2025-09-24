@@ -120,4 +120,12 @@ The notebook will install all required packages:
 ┌───────────────┐
 │ Streamlit UI  │
 └───────────────┘
+```
+### 📚 References
 
+--- Bandit (Python Security Linter) https://bandit.readthedocs.io/en/latest/
+Semgrep (Static Analysis)
+
+Hugging Face Inference API
+
+Ngrok
