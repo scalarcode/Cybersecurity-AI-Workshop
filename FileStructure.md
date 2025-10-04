@@ -4,6 +4,7 @@ This repository contains a compact demo for a **multi-agent Cybersecurity AI (CA
 
 ## Folder structure
 
+```bash
 /content/
 │
 ├── main.py # Core logic: scanner + analyst + responder agents, coordinator, and PDF generation
@@ -11,7 +12,7 @@ This repository contains a compact demo for a **multi-agent Cybersecurity AI (CA
 ├── sample_app/
 │ └── vulnerable.py # Intentionally vulnerable sample application used for scanning (for training/demo only)
 └── requirements.txt # Python dependencies for the project (use pip install -r requirements.txt)
-
+```
 ## File descriptions
 
 - **main.py**  
